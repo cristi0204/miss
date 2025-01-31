@@ -42,6 +42,7 @@ $plugin['Enrichment_services_url'] = '{{ MISP_MODULE_URL }}';
 $oidcAuth = [
     'provider_url' => '{{ OIDC_PROVIDER_INNER }}',
     'client_id' => '{{ OIDC_CLIENT_ID_INNER }}',
+    'scopes' => {{ OIDC_SCOPES | str }},
     'client_secret' => '{{ OIDC_CLIENT_SECRET_INNER }}',
     'authentication_method' => {{ OIDC_AUTHENTICATION_METHOD_INNER | str }},
     'code_challenge_method' => {{ OIDC_CODE_CHALLENGE_METHOD_INNER | str }},
